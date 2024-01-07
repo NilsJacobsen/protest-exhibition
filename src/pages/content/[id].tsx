@@ -35,7 +35,10 @@ export async function getStaticProps({ params }: any) {
 }
  
 const ContentPage = ({ contentData }: any) => {
-  return <div dangerouslySetInnerHTML={{ __html: contentData.contentHtml }} />
+  return <div id="remark" className="max-w-4xl mx-auto">
+    {/* @ts-ignore */}
+    <div dangerouslySetInnerHTML={{ __html: contentData.contentHtml }} />
+  </div>
 }
 
 export default ContentPage
