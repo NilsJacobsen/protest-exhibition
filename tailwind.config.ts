@@ -1,4 +1,5 @@
 import type { Config } from 'tailwindcss'
+import { fontFamily } from 'tailwindcss/defaultTheme'
 
 const config: Config = {
   content: [
@@ -13,6 +14,10 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      fontFamily: {
+        rubik: ['var(--rubik)', ...fontFamily.sans],
+        venusmartre: ['var(--venusmartre)', ...fontFamily.sans],
+      }
     },
   },
   plugins: [],
