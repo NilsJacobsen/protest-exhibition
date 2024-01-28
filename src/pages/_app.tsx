@@ -31,7 +31,7 @@ const venusmartre = localFont({
 })
 
 export default function App({ Component, pageProps }: AppProps) {
-  return <main className={`${rubik.variable} ${venusmartre.variable}`}>
+  return <main className={`${rubik.variable} ${venusmartre.variable} font-rubik`}>
       <Component {...pageProps} />
     </main>
 }
