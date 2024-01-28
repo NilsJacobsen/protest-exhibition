@@ -15,12 +15,12 @@ export default function Home() {
         />
       </Head>
     <main
-      className={`w-full h-screen flex flex-col items-center justify-center p-10 font-venusmartre`}
+      className={`w-full h-screen flex gap-2 flex-col items-center justify-center p-10 font-venusmartre`}
     >
 
       <p className='font-rubik'>Under construction</p>
       <Image src="/logo.jpg" alt="Auf die Straße" width={350} height={350} />
-      <p className='font-rubik pt-3'>07.03 - 24.03</p>
+      <p className='font-rubik'>07.03 - 24.03</p>
     </main>
     </>
     
