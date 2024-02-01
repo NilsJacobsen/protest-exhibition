@@ -4,16 +4,35 @@ import type {
 } from 'next'
 
 const contentPaths = [
-  {
-    params: {
-      id: "test"
-    }
-  }
+  "00_test",
+  "01_klimakrise_101",
+  "02_protest_in_deutschland",
+  "03_eine_kurze_zeitreise",
+  "04_im_diskurs",
+  "05_ziviler_ungehorsam",
+  "06_gewalt_und_repression",
+  "07_soziale_kipppunkte",
+  "a_fridays_for_future",
+  "b_letzte_generation",
+  "c_extinction_rebellion",
+  "d_ende_gelände",
+  "e_gruene_jugend"
 ]
+
+const getContentPaths = () => {
+  const newPaths: Array<{params: {id: string}}> = contentPaths.map((contentPath) => {
+    return {
+      params: {
+        id: contentPath
+      }
+    }
+  })
+  return newPaths
+}
  
 export const getStaticPaths = (async () => {
   return {
-    paths: contentPaths,
+    paths: getContentPaths(),
     fallback: false,
   }
 }) satisfies GetStaticPaths
