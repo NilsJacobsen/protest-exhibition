@@ -12,11 +12,11 @@ const contentPaths = [
   "ziviler_ungehorsam",
   "gewalt_und_repression",
   "soziale_kipppunkte",
-  "a_fridays_for_future",
-  "b_letzte_generation",
-  "c_extinction_rebellion",
-  "d_ende_gelände",
-  "e_gruene_jugend"
+  "fridays_for_future",
+  "letzte_generation",
+  "extinction_rebellion",
+  "ende_gelände",
+  "gruene_jugend"
 ]
 
 const getContentPaths = () => {
