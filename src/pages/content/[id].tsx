@@ -4,14 +4,14 @@ import type {
 } from 'next'
 
 const contentPaths = [
-  "00_test",
-  "01_klimakrise_101",
-  "02_protest_in_deutschland",
-  "03_eine_kurze_zeitreise",
-  "04_im_diskurs",
-  "05_ziviler_ungehorsam",
-  "06_gewalt_und_repression",
-  "07_soziale_kipppunkte",
+  "test",
+  "klimakrise_101",
+  "protest_in_deutschland",
+  "eine_kurze_zeitreise",
+  "im_diskurs",
+  "ziviler_ungehorsam",
+  "gewalt_und_repression",
+  "soziale_kipppunkte",
   "a_fridays_for_future",
   "b_letzte_generation",
   "c_extinction_rebellion",
@@ -49,6 +49,7 @@ export async function getStaticProps({ params }: any) {
 }
  
 const ContentPage = ({ contentData }: any) => {
+  console.log(contentData)
   return <div id="remark" className="max-w-4xl mx-auto font-rubik">
     {/* @ts-ignore */}
     {contentData && contentData.contentHtml && <div dangerouslySetInnerHTML={{ __html: contentData.contentHtml }} />}

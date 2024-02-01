@@ -10,7 +10,7 @@ export const getHtmlFromMarkdown = async (id: string) => {
     
     // Use gray-matter to parse the post metadata section
     const matterResult = matter(markdown);
-    console.log("matter", matterResult)
+    //console.log("matter", matterResult)
 
     // Use remark to convert markdown into HTML string
     const processedContent = await remark()
