@@ -34,6 +34,8 @@ export function LanguagePicker() {
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 200)
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 500)
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 1000)
+                            setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 2000)
+                            setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 3000)
                         }} 
                         href={router.asPath} 
                         locale={lang} 

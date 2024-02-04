@@ -1,5 +1,4 @@
 export const contentPaths = {
-    "test" : "test",
     "klimakrise": "Klimakrise",
     "protest-in-deutschland": "Protest in Deutschland",
     "eine-kurze-zeitreise": "Eine kurze Zeitreise",
