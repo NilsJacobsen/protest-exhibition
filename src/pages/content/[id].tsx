@@ -1,6 +1,7 @@
 import ContentHeader from '@/components/ContentHeader'
 import { contentPaths } from '@/helper/contentPaths'
 import { getHtmlFromMarkdown } from '@/helper/getHtmlFromMarkdown'
+import { parseToDashSeparated } from '@/helper/urlParser'
 import { availableLanguageTags } from '@/paraglide/runtime'
 import type {
   GetStaticPaths,
@@ -25,7 +26,9 @@ export const getStaticPaths = (async () => {
   for (const path of getContentPaths()) {
     for (const locale of availableLanguageTags) {
       paths.push({
-        params: path.params,
+        params: {
+          id: path.params.id,
+        },
         locale,
       });
     }

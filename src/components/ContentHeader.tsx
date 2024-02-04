@@ -3,20 +3,19 @@ import Arrow from "./Arrow";
 import { LanguagePicker } from "./LanguagePicker";
 import { usePathname } from 'next/navigation'
 import Link from "next/link";
-import { useRouter } from "next/router";
-import { availableLanguageTags, languageTag } from "@/paraglide/runtime";
+import { languageTag } from "@/paraglide/runtime";
 import { contentPaths } from "@/helper/contentPaths";
+import * as m from "../paraglide/messages"
 
 
 const ContentHeader = () => {
     const pathname = usePathname()
-    const { asPath } = useRouter()
     const [menuOpen, setMenuOpen] = useState(false)
 
     return (
         <div className="flex items-center py-4">
             <div className="flex-1 flex items-center">
-                <p className="hidden sm:block text-zinc-500">Content</p>
+                <p className="hidden sm:block text-zinc-500">{m.content_header_title()}</p>
                 <p className="hidden sm:block text-zinc-500 mx-2">/</p>
                 <div
                     className="block text-black relative cursor-pointer"

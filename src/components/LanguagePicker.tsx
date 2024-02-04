@@ -10,6 +10,9 @@ export function LanguagePicker() {
     const languageNames = {
 		de: "Deutsch",
         en: "English",
+        es: "Español",
+        fr: "Français",
+        ru: "Русский",
         tr: "Türkçe",
 	}
 
