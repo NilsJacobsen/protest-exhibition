@@ -22,7 +22,7 @@ const ContentPage = () => {
   return <>
     <Head >
       <title>
-        {`${m.content_header_title()} | ${router.query.id}`}
+        {`Auf die Straße | Ausstellung Dortmund`}
       </title>
       <meta
         name="description"
