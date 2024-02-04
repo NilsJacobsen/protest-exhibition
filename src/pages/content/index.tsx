@@ -12,7 +12,7 @@ const ContentOverview = () => {
         <div id="remark" className="font-rubik !min-h-fit">
             <div dangerouslySetInnerHTML={{ __html: contentData }} />
         </div>
-        <h2>Übersicht</h2>
+        <h2 className="text-lg font-bold py-2">Übersicht</h2>
         {Object.keys(contentPaths).map((path) => (
             <div
                 className="flex w-full px-4 py-3 z-50 cursor-pointer"
