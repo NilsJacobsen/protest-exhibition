@@ -15,15 +15,12 @@ html, body
 {
     margin: 0em;
     padding: 0em;
+    overflow-x: hidden;
 }
 
 /* The 'remark-all'-div contains the 'remark'-div and the 'remark-footer'-div */
 #remark-all
 {
-    /* Fonts from the sans-serif generic family are easier to read
-    on the screen. Sans-serif means 'without wiggles'. */
-    font-family: 'Open Sans', Arial, Sans-serif;
-
     /* Limit the width of the content. This makes it easier to read. */
     max-width: 40em;
 
@@ -86,14 +83,14 @@ html, body
 /* Emphasized text */
 #remark em
 {
-    color: #807000;
+    color: #000;
     font-style: italic;
 }
 
 /* Emphasized text (alternative) */
 #remark strong
 {
-    color: #807000;
+    color: #000;
     font-style: bold;
 }
 
@@ -113,7 +110,9 @@ html, body
     margin-bottom: 1em;
 
     /*letter-spacing: 0.7em;*/
-    line-height: 1.5em;
+    line-height: 1.25em;
+    text-transform: uppercase;
+    font-family: var(--venusmartre), ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 /* Level 2 headings */
@@ -210,6 +209,7 @@ html, body
 {
     margin-top: 0.25em;
     margin-bottom: 0.25em;
+    margin-left: 1rem;
 }
 
 /* Links */
