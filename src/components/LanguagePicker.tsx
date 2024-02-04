@@ -28,24 +28,24 @@ export function LanguagePicker() {
             </div>
             {menuOpen && <div className="absolute top-8 right-0 flex flex-col w-[180px] text-zinc-700 rounded-lg overflow-hidden border border-zinc-300 shadow-lg" onClick={() => setMenuOpen(false)}>
                 {availableLanguageTags.map((lang) => (
-                    <Link 
+                    <div 
                         onClick={() => { 
                             // TODO: fix workaround 
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 200)
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 500)
                             setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 1000)
-                            setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 2000)
-                            setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 3000)
+                            // setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 2000)
+                            // setTimeout(() => router.push(router.asPath, router.asPath, { locale: lang }), 3000)
                         }} 
-                        href={router.asPath} 
-                        locale={lang} 
+                        //href={router.asPath} 
+                        //locale={lang} 
                         key={lang}
                     >
                         <div className={(languageTag() === lang ? "bg-zinc-200 hover:bg-zinc-300 " : "bg-white hover:bg-zinc-100 ") + " relative flex w-full px-4 py-3 z-50 cursor-pointer"}>
                             <p className="flex-1">{languageNames[lang]}</p>
                             <p className="text-zinc-500">{lang}</p>
                         </div>
-                    </Link>
+                    </div>
                 ))}
             </div>}
         </div>
