@@ -9,7 +9,7 @@ export const getHtmlFromMarkdown = (id: string) => {
     // @ts-ignore
     const markdown = m[parseToUnderscoreSeparated(id)]()
   
-    if(markdown === undefined || markdown === "") return `<>404</>`
+    if(markdown === undefined || markdown === "") return `<></>`
     const matterResult = matter(markdown);
   
     const processedContent = remark()
