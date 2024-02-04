@@ -1,7 +1,6 @@
 import { useState } from "react";
 import Arrow from "./Arrow";
 import { LanguagePicker } from "./LanguagePicker";
-import { usePathname } from 'next/navigation'
 import Link from "next/link";
 import { languageTag } from "@/paraglide/runtime";
 import { contentPaths } from "@/helper/contentPaths";
