@@ -4,25 +4,19 @@ import html from 'remark-html';
 import * as m from "../paraglide/messages"
 import { parseToUnderscoreSeparated } from "./urlParser";
 
-export const getHtmlFromMarkdown = async (id: string) => {
+export const getHtmlFromMarkdown = (id: string) => {
+    if(!id) return `<></>`
     // @ts-ignore
     const markdown = m[parseToUnderscoreSeparated(id)]()
-    if(markdown === undefined || markdown === "") return undefined
-    
-    // Use gray-matter to parse the post metadata section
+  
+    if(markdown === undefined || markdown === "") return `<>404</>`
     const matterResult = matter(markdown);
-    //console.log("matter", matterResult)
-
-    // Use remark to convert markdown into HTML string
-    const processedContent = await remark()
-        .use(html)
-        .process(matterResult.content);
-
+  
+    const processedContent = remark()
+      .use(html)
+      .processSync(matterResult.content);
+  
     const contentHtml = processedContent.toString();
-
-    return {
-        id,
-        contentHtml,
-        ...matterResult.data,
-      };
+  
+    return contentHtml
 }
