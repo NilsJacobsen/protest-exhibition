@@ -3,6 +3,7 @@ import { contentPaths } from "@/helper/contentPaths"
 import { getHtmlFromMarkdown } from "@/helper/getHtmlFromMarkdown"
 import { languageTag } from "@/paraglide/runtime"
 import Link from "next/link"
+import * as m from "./../../paraglide/messages"
 
 const ContentOverview = () => {
     const contentData = getHtmlFromMarkdown("content_intro")
@@ -12,10 +13,10 @@ const ContentOverview = () => {
         <div id="remark" className="font-rubik !min-h-fit">
             <div dangerouslySetInnerHTML={{ __html: contentData }} />
         </div>
-        <h2 className="text-lg font-bold py-2">Übersicht</h2>
+        <h2 className="text-lg font-bold pb-2 pt-8">{m.content_list_title()}</h2>
         {Object.keys(contentPaths).map((path) => (
             <div
-                className="flex w-full px-4 py-3 z-50 cursor-pointer"
+                className="flex w-full px-4 py-3 z-50 cursor-pointer hover:opacity-50"
                 key={path}
             >
                 <Link href={`/content/${path}`} locale={languageTag()}>

@@ -16,7 +16,7 @@ const ContentHeader = () => {
     return (
         <div className="flex items-center py-4">
             <div className="flex-1 flex items-center">
-                <p className="hidden sm:block text-zinc-500">{m.content_header_title()}</p>
+                <Link href="/content" locale={languageTag()} className="hidden sm:block text-zinc-500 hover:text-black">{m.content_header_title()}</Link>
                 {router.query.id && <div className="flex items-center">
 
                     <p className="hidden sm:block text-zinc-500 mx-2">/</p>
