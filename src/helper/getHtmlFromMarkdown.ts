@@ -2,6 +2,7 @@ import matter from "gray-matter";
 import { remark } from "remark";
 import html from 'remark-html';
 import * as m from "../paraglide/messages"
+import { AvailableLanguageTag } from "@/paraglide/runtime";
 
 export const getHtmlFromMarkdown = async (id: string) => {
     // @ts-ignore
@@ -17,6 +18,13 @@ export const getHtmlFromMarkdown = async (id: string) => {
         .use(html)
         .process(matterResult.content);
 
+//     const useRemarkSync = useMemo(
+//     () =>
+//       remark()
+//         .use(html)
+//         .processSync(source).result as React.ReactElement,
+//     [source, rehypeReactOptions],
+//   );
     const contentHtml = processedContent.toString();
 
     return {

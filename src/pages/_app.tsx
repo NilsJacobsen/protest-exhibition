@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import '@/styles/remark.css'
 import localFont from 'next/font/local'
+import { AvailableLanguageTag, setLanguageTag } from "../paraglide/runtime"
 
 import type { AppProps } from 'next/app'
 
@@ -30,7 +31,8 @@ const venusmartre = localFont({
   variable: '--venusmartre',
 })
 
-export default function App({ Component, pageProps }: AppProps) {
+export default function App({ Component, pageProps, router }: AppProps) {
+  setLanguageTag(router.locale as AvailableLanguageTag)
   return <main className={`${rubik.variable} ${venusmartre.variable} font-rubik`}>
       <Component {...pageProps} />
     </main>
