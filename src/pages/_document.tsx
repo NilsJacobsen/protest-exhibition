@@ -6,6 +6,7 @@ export default function Document() {
       <Head >
         <link rel="shortcut icon" href="/favicon.jpeg" />
         <meta property="og:image" content="/logo.jpg" />
+        <meta name="twitter:image" content="/logo.jpg" />
       </Head>
       <body>
         <Main />
