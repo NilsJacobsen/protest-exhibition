@@ -4,7 +4,7 @@ export const contentPaths = {
     "eine-kurze-zeitreise": "Eine kurze Zeitreise",
     "im-diskurs": "Im Diskurs",
     "ziviler-ungehorsam": "Ziviler Ungehorsam",
-    "gewalt-und-repression": "Gewalt und Repression",
+    "repression-und-gewalt": "Repression und Gewalt",
     "soziale-kipppunkte": "Soziale Kipppunkte",
     "fridays-for-future": "Fridays for Future",
     "letzte-generation": "Letzte Generation",
