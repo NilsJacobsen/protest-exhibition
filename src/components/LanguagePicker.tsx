@@ -9,6 +9,7 @@ export function LanguagePicker() {
 
     const languageNames = {
 		de: "Deutsch",
+        "de-EASY": "Leichte Sprache",
         en: "English",
         es: "Español",
         fr: "Français",
