@@ -1,5 +1,9 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import Hero from '@/components/landingpage/Hero'
+import Navigation from '@/components/Navigation'
+import Prolog from '@/components/landingpage/Prolog'
+import Events from '@/components/landingpage/Events'
 
 export default function Home() {
   return (
@@ -15,12 +19,26 @@ export default function Home() {
         />
       </Head>
     <main
-      className={`w-full h-screen flex gap-2 flex-col items-center justify-center p-10 font-venusmartre`}
+      className={`font-venusmartre relative`}
     >
-
-      <p className='font-rubik'>Under construction</p>
-      <Image src="/logo.jpg" alt="Auf die Straße" width={350} height={350} />
-      <p className='font-rubik'>07.03 - 24.03</p>
+      <nav className="fixed w-full font-rubik z-50">
+        <Navigation/>
+      </nav>
+      <div className='w-full h-screen flex gap-2 flex-col items-center justify-center p-10'>
+        <p className='font-rubik'>Under construction</p>
+        <Image src="/logo.jpg" alt="Auf die Straße" width={350} height={350} />
+        <p className='font-rubik'>07.03 - 24.03</p>
+      </div>
+      <Hero/>
+      <Prolog />
+      <Events />
+      <footer>
+        <div className="font-rubik max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
+          <div className="mt-8 md:mt-0 md:order-1">
+            <p className="text-center text-base text-zinc-600">{"© AUF DIE STRASSE Ausstellung"}</p>
+          </div>
+        </div>
+      </footer>
     </main>
     </>
     

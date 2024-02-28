@@ -19,7 +19,7 @@ const ContentOverview = () => {
                 className="flex w-full px-4 py-3 z-50 cursor-pointer hover:opacity-50"
                 key={path}
             >
-                <Link href={`/content/${path}`} locale={languageTag()}>
+                <Link legacyBehavior href={`/content/${path}`} locale={languageTag()}>
                     {
                         // @ts-ignore 
                         contentPaths[path]

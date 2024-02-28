@@ -16,7 +16,7 @@ const ContentHeader = () => {
     return (
         <div className="flex items-center py-4">
             <div className="flex-1 flex items-center">
-                <Link href="/content" locale={languageTag()} className="hidden sm:block text-zinc-500 hover:text-black">{m.content_header_title()}</Link>
+                <Link legacyBehavior href="/content" locale={languageTag()} className="hidden sm:block text-zinc-500 hover:text-black">{m.content_header_title()}</Link>
                 {router.query.id && <div className="flex items-center">
 
                     <p className="hidden sm:block text-zinc-500 mx-2">/</p>
@@ -30,7 +30,7 @@ const ContentHeader = () => {
                         </div>
                         {menuOpen && <div className="absolute top-8 flex flex-col text-zinc-700 w-[320px] rounded-lg overflow-hidden border border-zinc-300 shadow-lg" onClick={() => setMenuOpen(false)}>
                             {Object.keys(contentPaths).map((path) => (
-                                <Link  href={`/content/${path}`} locale={languageTag()} key={languageTag()}>
+                                <Link legacyBehavior href={`/content/${path}`} locale={languageTag()} key={languageTag()}>
                                     <div className={(id === path ? "bg-zinc-200 hover:bg-zinc-300 " : "bg-white hover:bg-zinc-100 ") + " relative flex w-full px-4 py-3 z-50 cursor-pointer"}>
                                         {/* @ts-ignore */}
                                         {contentPaths[path]}
