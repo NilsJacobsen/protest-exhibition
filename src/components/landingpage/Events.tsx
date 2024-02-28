@@ -47,15 +47,19 @@ export default function Events() {
     
     return (
       <div id="events" className="bg-zinc-50 font-rubik">
-        <div className="mx-auto py-12 px-4 max-w-7xl sm:px-6 lg:px-8 lg:py-24">
+        <div className="mx-auto  px-4 max-w-7xl sm:px-6 lg:px-8 pt-12 lg:pt-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
-            <div className="space-y-5 sm:space-y-4">
-              <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl font-venusmartre">{"title"}</h2>
-              <p className="text-xl text-gray-500">
-                {"description"}
-              </p>
+            <div className="space-y-5 sm:space-y-4 flex flex-col justify-between">
+                <div>
+                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl font-venusmartre">{"title"}</h2>
+                    <p className="text-xl text-gray-500">
+                        {"description"}
+                    </p>
+                </div>
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img alt="megaphone" src="./sw_megafon.png" className="hidden lg:block w-full -translate-x-20 pr-20"/>
             </div>
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 pb-12 lg:pb-24">
               <ul
                 role="list"
                 className="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:gap-x-8"
