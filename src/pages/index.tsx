@@ -25,7 +25,8 @@ export default function Home() {
         <Navigation/>
       </nav>
       <div className='relative w-full h-screen flex gap-2 flex-col items-center justify-center p-10'>
-        <Image src="/logo.jpg" alt="Auf die Straße" width={350} height={350} />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img src="/logo.jpg" className='max-w-[600px] w-full' alt="Auf die Straße" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img alt="pfeile" src="./pfeile.png" className="bottom-16 absolute hidden lg:block w-[200px]"/>
       </div>

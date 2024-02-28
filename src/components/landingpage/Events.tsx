@@ -70,7 +70,7 @@ export default function Events() {
                         <img className="object-cover shadow-lg rounded-lg" alt="event image" src={event.imageUrl} />
                       </div>}
                       <div className="text-lg">
-                        <p className="text-zinc-600">{event.date}</p>
+                        <p className="text-zinc-900 font-medium">{event.date}</p>
                       </div>
                       {event.children.map((child: any, index: number) =>  {
                         return <div key={index} className="pb-4">
