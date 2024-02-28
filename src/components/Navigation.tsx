@@ -9,7 +9,7 @@ const Navigation = () => {
         { name: "Prolog", href: '#prolog' },
         { name: "Events", href: '#events' },
         // { name: m.nav_videos(), href: '#videos' },
-        // { name: m.nav_imprint(), href: '/impressum' },
+        { name: "Impressum", href: '/impressum' },
         // { name: m.nav_data_protection(), href: '/datenschutz' },
       ]
 

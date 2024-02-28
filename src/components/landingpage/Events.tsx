@@ -2,44 +2,42 @@ export default function Events() {
 
     const events = [
       {
-        date: "date",
-        imageUrl: './logo.jpg',
-        author: "author",
+        date: "07.03. // 18 Uhr",
         children: [
           {
-            caption: "caption",
-            title: "title",
-            bio: "desc",
-            link: 'link',
-            linkLabel: 'linklabel',
+            caption: "Ausstellungseröffnung",
+            title: "„Wie weit muss Protest gehen?“",
+          },
+          {
+            bio: "mit der Letzten Generation, Fridays for Future, Ende Gelände und der Grünen Jugend.",
+          },
+          {
+            caption: "Standort:",
+            bio: "Museum für Kunst und Kulturgeschichte STADT_RAUM, Hansastraße 3",
           }
         ]
       },
       {
-        date: "date",
-        imageUrl: './logo.jpg',
-        author: "author",
+        date: "13.03. // 18 - 20 Uhr",
         children: [
           {
-            caption: "caption",
-            title: "title",
-            bio: "desc",
-            link: 'link',
-            linkLabel: 'linklabel',
+            caption: "Workshop",
+            title: "„How to: Klimastreik – Wie organisiere ich eine Demonstration?“",
+          },
+          {
+            bio: "mit Fridays for Future Dortmund mit Anmeldung.",
           }
         ]
       },
       {
-        date: "date",
-        imageUrl: './logo.jpg',
-        author: "author",
+        date: "16.03. // 15 - 18 Uhr",
         children: [
           {
-            caption: "caption",
-            title: "title",
-            bio: "desc",
-            link: 'link',
-            linkLabel: 'linklabel',
+            caption: "Workshop",
+            title: "„and action!“",
+          },
+          {
+            bio: "mit Extinction Rebellion Düsseldorf mit Anmeldung.",
           }
         ]
       },
@@ -47,7 +45,7 @@ export default function Events() {
     
     return (
       <div id="events" className="bg-zinc-50 font-rubik">
-        <div className="mx-auto  px-4 max-w-7xl sm:px-6 lg:px-8 pt-12 lg:pt-24">
+        <div className="mx-auto px-4 max-w-7xl sm:px-6 lg:px-8 pt-12 lg:pt-24">
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4 flex flex-col justify-between">
                 <div>
@@ -66,29 +64,29 @@ export default function Events() {
               >
                 {events.map((event: any) => (
                   <li key={event.name}>
-                    <div className="space-y-4">
-                      <div className="aspect-w-3 aspect-h-2">
+                    <div className="space-y-2">
+                      {event.imageUrl && <div className="aspect-w-3 aspect-h-2">
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img className="object-cover shadow-lg rounded-lg" alt="event image" src={event.imageUrl} />
-                      </div>
+                      </div>}
                       <div className="text-lg">
-                        <p className="text-gray-500">{event.date}</p>
+                        <p className="text-zinc-600">{event.date}</p>
                       </div>
                       {event.children.map((child: any, index: number) =>  {
                         return <div key={index} className="pb-4">
                           <div className="text-lg">
-                            <p className="text-gray-500">{child.caption}</p>
-                            <p className="text-[#9B9ECE]">{child.title}</p>
+                            <p className="text-zinc-600">{child.caption}</p>
+                            <p className="text-[#5E63AE] font-medium">{child.title}</p>
                           </div>
                           <div className="text-lg">
-                            <p className="text-gray-500">{child.bio}</p>
+                            <p className="text-zinc-600">{child.bio}</p>
                           </div>
                           <a href={child.link} className="text-lg">
-                            <p className="underline text-gray-500">{child.linkLabel}</p>
+                            <p className="underline text-zinc-600">{child.linkLabel}</p>
                           </a>
                         </div>
                       })}
-                      {event.author && <p className="text-gray-500">{event.author}</p>}
+                      {event.author && <p className="text-zinc-600">{event.author}</p>}
                     </div>
                   </li>
                 ))}

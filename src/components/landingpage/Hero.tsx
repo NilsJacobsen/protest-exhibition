@@ -50,13 +50,13 @@ const Hero = () => {
                         <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Sa, So // 11 - 17.30 Uhr"}</p>
                         <p className="pb-8 font-regular text-s leading-5 text-zinc-500">{"Montags geschlossen"}</p>
                         
-                        <div className="w-full rounded-md shadow">
+                        <div className="w-full rounded-md">
                           <a
                             target="_blank"
-                            href="https://www.lwl-landesmuseum-herne.de/de"
-                            className="bg-zinc-200 hover:bg-zinc-300 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black"
+                            href="https://dortmund-kreativ.de/veranstaltungsort/hans-a/"
+                            className="bg-zinc-100 relative z-40 hover:bg-zinc-200 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black"
                           >
-                            {"link"}
+                            {"Zum Veranstaltungsort"}
                           </a>
                         </div>
                       </div>
