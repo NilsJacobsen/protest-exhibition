@@ -22,14 +22,21 @@ export const Map = () => {
       height: "100vh",
       width: "100wh",
       //@ts-ignore
-      longitude: "7.22549",
-      latitude: "51.5362136",
+      longitude: "7.463611",
+      latitude: "51.5167307",
       zoom: 16
     })
   }, []); 
 
   //@ts-ignore
-  //mapDispatch({ type: "ADD_MARKER", payload: { marker: [51.5362136, 7.22549] } })
+  useEffect(() => {
+    console.log("add marker")
+    //@ts-ignore
+    mapDispatch({ type: "REMOVE_MARKER", payload: { marker: [51.5179307, 7.465911] } })
+    //@ts-ignore
+    mapDispatch({ type: "ADD_MARKER", payload: { marker: [51.5179307, 7.465911] } })
+  }, [])
+
 
 
   return (

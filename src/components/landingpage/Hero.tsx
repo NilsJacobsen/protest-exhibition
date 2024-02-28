@@ -10,19 +10,21 @@ const Hero = () => {
 
     return (
         <div className="relative overflow-hidden bg-zinc-50">
-          <div className="relative pt-0 lg:mt-[-50px] pb-16 sm:pb-16">
+          <div className="relative pt-8 lg:mt-[-50px] pb-16 sm:pb-16">
             <main className="mt-16 sm:mt-24 font-rubik">
               <div className="mx-auto max-w-7xl">
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                   <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
                     <div>
                       <h2 className="text-xl font-bold text-black">{"07.03 - 24.03"}</h2>
-                      <h1 className="font-venusmartre pb-4 mt-4 text-4xl tracking-tight font-bold text-zinc-400 sm:mt-5 sm:leading-none lg:mt-3 lg:text-5xl xl:text-6xl">
-                        <span className="md:block">{"AUF DIE STRASSE"}</span>{' '}
-                        <span className="text-black md:block">{"AUSSTELLUNG"}</span>
+                      <h1 className="font-venusmartre pb-4 mt-4 tracking-tight font-bold text-black sm:mt-5 sm:leading-none lg:mt-3 text-3xl sm:text-5xl">
+                        {"AUSSTELLUNG ÜBER KLIMAAKTIVISMUS"}
                       </h1>
                       <p className="p-0 text-base font-regular text-zinc-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
-                        {"Gesellschaftliche Diversität ist ein Thema, das viele bewegt, manche ermüdet, für hitzige Diskussionen sorgt und dabei immer polarisiert."}
+                        {"In dieser interaktiven Wanderausstellung stellst du Klimaaktivist:innen Fragen über ihre Arbeit, lernst mehr über Klimaaktivismus und entscheidest, wie weit du selbst für den Protest gehen möchtest."}
+                      </p>
+                      <p className="p-0 text-base font-regular text-zinc-600 sm:mt-5 sm:text-xl lg:text-lg xl:text-xl">
+                        {"Mit der multimedialen Ausstellung und einem breiten Rahmenprogramm treten wir gemeinsam in den aktuellen Klimaaktivismus-Diskurs in Deutschland ein."}
                       </p>
                       <div className="sm:hidden mb-12 w-full rounded-md shadow">
                         <a
@@ -32,7 +34,6 @@ const Hero = () => {
                           {"download calendar"}
                         </a>
                       </div>
-                      {/* <p className="mt-8 text-sm text-gray-900 uppercase tracking-wide font-semibold sm:mt-10">In zusammenarbeit mit</p> */}
                     </div>
                   </div>
                   <div className="mt-16 sm:mt-24 lg:mt-0 lg:col-span-6">
@@ -43,11 +44,11 @@ const Hero = () => {
                         </MapProvider>
                       </div>
                       <div className="px-4 py-6 bg-white border-t-2 border-gray-200 sm:px-10">
-                        <p className="pb-3 font-bold text-s leading-5 text-zinc-500">{"name"}</p>
-                        <p className="pb-3 font-regular text-s leading-5 text-zinc-500">{"address"}</p>
-                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"opening week"}</p>
-                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"opening weekend"}</p>
-                        <p className="pb-8 font-regular text-s leading-5 text-zinc-500">{"opening addition"}</p>
+                        <p className="pb-3 font-bold text-s leading-5 text-zinc-500">{"HANS A"}</p>
+                        <p className="pb-3 font-regular text-s leading-5 text-zinc-500">{"Hansastraße 6-10, 44137 Dortmund"}</p>
+                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Di, Mi, Do, Fr // 13 - 19 Uhr"}</p>
+                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Sa, So // 11 - 17.30 Uhr"}</p>
+                        <p className="pb-8 font-regular text-s leading-5 text-zinc-500">{"Montags geschlossen"}</p>
                         
                         <div className="w-full rounded-md shadow">
                           <a
@@ -96,7 +97,7 @@ const Hero = () => {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                         className="h-9 sm:h-14 grayscale"
-                        src="/volksbank.png"
+                        src="/volksbank.jpg"
                         alt="Museum der Stadt Köln"
                     />
                     </div>

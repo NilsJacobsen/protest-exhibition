@@ -51,9 +51,9 @@ export default function Events() {
           <div className="space-y-12 lg:grid lg:grid-cols-3 lg:gap-8 lg:space-y-0">
             <div className="space-y-5 sm:space-y-4 flex flex-col justify-between">
                 <div>
-                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl font-venusmartre">{"title"}</h2>
+                    <h2 className="text-3xl font-extrabold tracking-tight sm:text-4xl font-venusmartre pb-4">{"EVENTS"}</h2>
                     <p className="text-xl text-gray-500">
-                        {"description"}
+                        {"Während des Ausstellungszeitraums finden folgende Veranstaltungen statt."}
                     </p>
                 </div>
                 {/* eslint-disable-next-line @next/next/no-img-element */}

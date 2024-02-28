@@ -25,9 +25,7 @@ export default function Home() {
         <Navigation/>
       </nav>
       <div className='relative w-full h-screen flex gap-2 flex-col items-center justify-center p-10'>
-        <p className='font-rubik'>Under construction</p>
         <Image src="/logo.jpg" alt="Auf die Straße" width={350} height={350} />
-        <p className='font-rubik'>07.03 - 24.03</p>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img alt="pfeile" src="./pfeile.png" className="bottom-16 absolute hidden lg:block w-[200px]"/>
       </div>

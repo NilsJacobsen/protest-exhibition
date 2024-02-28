@@ -15,6 +15,7 @@ export const Markers = () => {
           offsetLeft={0}
           latitude={marker[0]}
           longitude={marker[1]}
+          color={"#9B9ECE"}
         >
           
         </Marker>
