@@ -10,10 +10,17 @@
     "postinstall": "paraglide-js compile --project ./project.inlang"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.18",
+    "@heroicons/react": "^1.0.6",
+    "dotenv": "^16.4.5",
     "gray-matter": "^4.0.3",
+    "ical-generator": "^3.4.3",
+    "mapbox-gl": "^2.9.1",
+    "moment": "^2.30.1",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
+    "react-map-gl": "^7.1.7",
     "remark": "^15.0.1",
     "remark-html": "^16.0.1"
   },

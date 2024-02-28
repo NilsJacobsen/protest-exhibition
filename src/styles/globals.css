@@ -21,6 +21,10 @@ body {
   background: #FFF
 }
 
+.mapboxgl-ctrl {
+  display: none;
+}
+
 /* h1 {
   font-size: xx-large;
   margin-top: 2rem;
