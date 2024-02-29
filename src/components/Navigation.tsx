@@ -42,22 +42,22 @@ const Navigation = () => {
                   </div>
                   <div className="hidden space-x-8 md:flex md:ml-10">
                     {navigation.map((item) => (
-                      <Link legacyBehavior key={item.name} href={item.href}>
-                        <a className="text-base font-medium text-zinc-600 hover:text-zinc-900">
+                      <Link key={item.name} href={item.href}>
+                        <p className="text-base font-medium text-zinc-600 hover:text-zinc-900">
                           {item.name}
-                        </a>
+                        </p>
                       </Link>
                     ))}
                     {/* <LanguagePicker/> */}
                   </div>
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-6">
-                  <a
+                  <Link
                     href="/api/ical"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-black bg-zinc-100 hover:bg-zinc-200"
                   >
                     Kalendereintrag speichern
-                  </a>
+                  </Link>
                 </div>
               </nav>
             </div>
@@ -92,29 +92,29 @@ const Navigation = () => {
                   <div className="pt-5 pb-6">
                     <div className="px-2 space-y-1">
                       {navigation.map((item) => (
-                        <a
+                        <Link
                           key={item.name}
                           href={item.href}
                           className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
                         >
                           {item.name}
-                        </a>
+                        </Link>
                       ))}
                       <a
                           key={"museum"}
-                          href={"https://www.lwl-landesmuseum-herne.de/de"}
+                          href={"https://dortmund-kreativ.de/veranstaltungsort/hans-a/"}
                           className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:bg-gray-50"
                         >
                           Museum
                         </a>
                     </div>
                     <div className="mt-6 px-5">
-                      <a
+                      <Link
                         href="/api/ical"
                         className="block text-center w-full py-3 px-4 rounded-md text-black font-medium bg-zinc-100 hover:bg-zinc-200"
                       >
                         Kalendereintrag speichern
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>

@@ -27,12 +27,12 @@ const Hero = () => {
                         {"Mit der multimedialen Ausstellung und einem breiten Rahmenprogramm treten wir gemeinsam in den aktuellen Klimaaktivismus-Diskurs in Deutschland ein."}
                       </p>
                       <div className="sm:hidden mt-8 lg:mt-0 lg:mb-12 w-full rounded-md shadow">
-                        <a
+                        <Link
                           href="/api/ical"
                           className="bg-white hover:bg-gray-200 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black"
                         >
                           {"Kalendereintrag speichern"}
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
