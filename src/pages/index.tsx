@@ -28,7 +28,7 @@ export default function Home() {
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img src="/logo.jpg" className='max-w-[600px] w-full' alt="Auf die Straße" />
         {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img alt="pfeile" src="./pfeile.png" className="bottom-16 absolute hidden lg:block w-[200px]"/>
+        <img alt="pfeile" src="./pfeile.png" className="bottom-16 absolute w-[200px]"/>
       </div>
       <Hero/>
       <Prolog />

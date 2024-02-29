@@ -51,12 +51,12 @@ const Navigation = () => {
                     {/* <LanguagePicker/> */}
                   </div>
                 </div>
-                <div className="invisible hidden md:flex md:items-center md:space-x-6">
+                <div className="hidden md:flex md:items-center md:space-x-6">
                   <a
                     href="/api/ical"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-black bg-zinc-100 hover:bg-zinc-200"
                   >
-                    Download Calendar
+                    Kalendereintrag speichern
                   </a>
                 </div>
               </nav>
@@ -78,7 +78,7 @@ const Navigation = () => {
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                             className="h-12 w-auto"
-                            src="/diversity_black.png"
+                            src="/favicon.jpeg"
                             alt=""
                         />
                     </div>
@@ -108,12 +108,12 @@ const Navigation = () => {
                           Museum
                         </a>
                     </div>
-                    <div className="mt-6 px-5 invisible">
+                    <div className="mt-6 px-5">
                       <a
                         href="/api/ical"
                         className="block text-center w-full py-3 px-4 rounded-md text-black font-medium bg-zinc-100 hover:bg-zinc-200"
                       >
-                        Download Calendar
+                        Kalendereintrag speichern
                       </a>
                     </div>
                   </div>
