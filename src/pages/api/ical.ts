@@ -15,7 +15,7 @@ calendar.createEvent({
   end: moment.unix(1711306800),
   summary: "Auf die Straße - Ausstellung Dortmund",
   description: "Kalendereintrag für den gesamten Ausstellungszeitraum.",
-  url: 'https://diversity-ausstellung.de/'
+  url: 'https://www.aufdiestrasse.info/'
 });
 
 export default function handler(
