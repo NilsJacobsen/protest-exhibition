@@ -3,7 +3,7 @@ const nextConfig = {
   reactStrictMode: true,
   i18n: {
 		//Use spread operator to shut typescript up
-		locales: ["de", "en", "es", "fr", "tr", "ru"],
+		locales: ["de", "de-EASY", "en", "es", "fr", "tr", "ru"],
 		defaultLocale: "de",
 		localeDetection: false
 	}
