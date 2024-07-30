@@ -16,7 +16,7 @@ const Hero = () => {
                 <div className="lg:grid lg:grid-cols-12 lg:gap-8">
                   <div className="px-4 sm:px-6 sm:text-center md:max-w-2xl md:mx-auto lg:col-span-6 lg:text-left lg:flex lg:items-center">
                     <div>
-                      <h2 className="text-xl font-bold text-black">{"07.03 - 24.03"}</h2>
+                      <h2 className="text-xl font-bold text-black">{"08.08. - 17.11.2024"}</h2>
                       <h1 className="font-venusmartre pb-4 mt-4 tracking-tight font-bold text-black sm:mt-5 sm:leading-none lg:mt-3 text-3xl sm:text-5xl">
                         {"AUSSTELLUNG ÜBER KLIMAAKTIVISMUS"}
                       </h1>
@@ -44,16 +44,17 @@ const Hero = () => {
                         </MapProvider>
                       </div>
                       <div className="px-4 py-6 bg-white lg:border-t-2 border-gray-200 sm:px-10">
-                        <p className="pb-3 font-bold text-s leading-5 text-zinc-500">{"HANS A"}</p>
-                        <p className="pb-3 font-regular text-s leading-5 text-zinc-500">{"Hansastraße 6-10, 44137 Dortmund"}</p>
-                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Di, Mi, Do, Fr // 13 - 19 Uhr"}</p>
-                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Sa, So // 11 - 17.30 Uhr"}</p>
-                        <p className="pb-8 font-regular text-s leading-5 text-zinc-500">{"Montags geschlossen"}</p>
+                        <p className="font-bold text-s leading-5 text-zinc-500">{"LWL-Museum für Archäologie und Kultur"}</p>
+                        <p className="pb-3 font-bold text-s leading-5 text-zinc-500">{"LWL -MAK Westfälisches Landesmuseum"}</p>
+                        <p className="pb-3 font-regular text-s leading-5 text-zinc-500">{"Europaplatz 1, 44623 Herne"}</p>
+                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Di, Mi, Fr // 9 - 17 Uhr"}</p>
+                        <p className="pb-1 font-regular text-s leading-5 text-zinc-500">{"Do // 9 - 19 Uhr"}</p>
+                        <p className="pb-8 font-regular text-s leading-5 text-zinc-500">{"Sa, So, Feiertage // 11 - 18 Uhr"}</p>
                         
                         <div className="w-full rounded-md">
                           <a
                             target="_blank"
-                            href="https://dortmund-kreativ.de/veranstaltungsort/hans-a/"
+                            href="https://www.lwl-landesmuseum-herne.de/de/"
                             className="bg-zinc-100 relative z-40 hover:bg-zinc-200 w-full inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-black"
                           >
                             {"Zum Veranstaltungsort"}
@@ -68,7 +69,7 @@ const Hero = () => {
             
           </div>
           <div className="w-full bg-white">
-                <div className="py-20 max-w-4xl px-6 mx-auto flex justify-center md:justify-between flex-wrap gap-4">
+                <div className="py-20 max-w-5xl px-6 mx-auto flex justify-center flex-wrap gap-x-4 gap-y-8">
                     <div className="flex justify-center px-1">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
@@ -80,17 +81,17 @@ const Hero = () => {
                     <div className="flex justify-center px-1">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        className="h-9 sm:h-14 grayscale"
-                        src="/museum-fuer-kunst-und-kultur.png"
-                        alt="NS-DOK"
+                        className="h-9 sm:h-14 grayscale scale-150 px-4"
+                        src="/1_LWL.svg"
+                        alt="LWL"
                     />
                     </div>
                     <div className="flex justify-center px-1">
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
-                        className="h-9 sm:h-14 grayscale"
-                        src="/dortmund-kreativ.png"
-                        alt="Museum der Stadt Köln"
+                        className="h-9 sm:h-14 grayscale scale-150 px-12"
+                        src="/2_LWL-MAK.svg"
+                        alt="LWL-MAK"
                     />
                     </div>
                     <div className="flex justify-center px-1">
@@ -98,7 +99,7 @@ const Hero = () => {
                     <img
                         className="h-9 sm:h-14 grayscale"
                         src="/volksbank.jpg"
-                        alt="Museum der Stadt Köln"
+                        alt="Volksbank"
                     />
                     </div>
                 </div>

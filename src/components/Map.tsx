@@ -22,8 +22,8 @@ export const Map = () => {
       height: "100vh",
       width: "100wh",
       //@ts-ignore
-      longitude: "7.463611",
-      latitude: "51.5167307",
+      longitude: "7.2246114",
+      latitude: "51.536251",
       zoom: 16
     })
   }, []); 
@@ -32,9 +32,9 @@ export const Map = () => {
   useEffect(() => {
     console.log("add marker")
     //@ts-ignore
-    mapDispatch({ type: "REMOVE_MARKER", payload: { marker: [51.5179307, 7.465911] } })
+    mapDispatch({ type: "REMOVE_MARKER", payload: { marker: [51.537951, 7.2270114] } })
     //@ts-ignore
-    mapDispatch({ type: "ADD_MARKER", payload: { marker: [51.5179307, 7.465911] } })
+    mapDispatch({ type: "ADD_MARKER", payload: { marker: [51.537951, 7.2270114] } })
   }, [])
 
 

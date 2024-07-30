@@ -141,9 +141,9 @@ export default function Impressum() {
                 <img alt="Volksbank" src="./volksbank.jpg" className="w-3/4 pb-12"/>
                 <p className="font-semibold text-2xl text-black uppercase">In Kooperation mit</p>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img alt="FH Dortmund" src="./dortmund-kreativ.png" className="w-3/4"/>
+                <img alt="FH Dortmund" src="./1_LWL.svg" className="w-3/4"/>
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img alt="FH Dortmund" src="./museum-fuer-kunst-und-kultur.png" className="w-3/4"/>
+                <img alt="FH Dortmund" src="./2_LWL-MAK.svg" className="w-3/4"/>
               </div>
             </div>
           </div>

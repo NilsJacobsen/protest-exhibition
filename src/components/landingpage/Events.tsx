@@ -2,42 +2,74 @@ export default function Events() {
 
     const events = [
       {
-        date: "07.03. // 18 Uhr",
+        date: "08.08. // 18 Uhr",
         children: [
           {
-            caption: "Ausstellungseröffnung",
-            title: "„Wie weit muss Protest gehen?“",
+            caption: "Vernissage",
+            title: "„Eröffnung der Ausstellung AUF DIE STRASSE!“",
           },
           {
-            bio: "mit der Letzten Generation, Fridays for Future, Ende Gelände und der Grünen Jugend.",
+            bio: "Mit den Gestalterinnen",
+          },
+        ]
+      },
+      {
+        date: "19.09. // 19 Uhr",
+        children: [
+          {
+            caption: "Vortrag",
+            title: "„Eine andere Geschichte des anthropogenen Klimawandels“",
           },
           {
-            caption: "Standort:",
-            bio: "Museum für Kunst und Kulturgeschichte STADT_RAUM, Hansastraße 3",
+            bio: "Mit Dr. Franz Mauelshagen, Universität Bielefeld",
           }
         ]
       },
       {
-        date: "13.03. // 18 - 20 Uhr",
+        date: "10.10. // 19 Uhr",
         children: [
           {
-            caption: "Workshop",
-            title: "„How to: Klimastreik – Wie organisiere ich eine Demonstration?“",
+            caption: "Öffentliche Tagung",
+            title: "„Kultur wirkt – Museen und nachhaltiges Handeln“",
           },
           {
-            bio: "mit Fridays for Future Dortmund mit Anmeldung.",
+            bio: " Öffentliche Tagung in Kooperation mit der Christlichen Initiative Romero e.V. (CIR). Anmeldung telefonisch oder per Mail erbeten.",
           }
         ]
       },
       {
-        date: "16.03. // 15 - 18 Uhr",
+        date: "17.10. // 19 Uhr",
         children: [
           {
-            caption: "Workshop",
-            title: "„and action!“",
+            caption: "Vortrag",
+            title: "„Auswirkungen des Klimawandels auf das materielle und kulturelle Erbe“",
           },
           {
-            bio: "mit Extinction Rebellion Düsseldorf mit Anmeldung.",
+            bio: "Mit Prof. Dr. Ralf Kilian, Universität Bamberg. Die Veranstaltung findet ausschließlich online statt.",
+          }
+        ]
+      },
+      {
+        date: "21.11. // 19 Uhr",
+        children: [
+          {
+            caption: "Vortrag",
+            title: "„Der Schwarze Tod und das Klima: Sterne, Wetter und Getreide“",
+          },
+          {
+            bio: "Mit Dr. Martin Bauch, Leibniz-Institut für Geschichte und Kultur des östlichen Europa (GWZO), Leipzig",
+          }
+        ]
+      },
+      {
+        date: "30.11. // 19 Uhr",
+        children: [
+          {
+            caption: "Vortrag",
+            title: "„Klimawandel und historische Gärten“",
+          },
+          {
+            bio: "Mit Philipp Sattler",
           }
         ]
       },

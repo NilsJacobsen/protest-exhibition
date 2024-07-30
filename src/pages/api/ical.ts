@@ -11,8 +11,8 @@ const calendar = ical({name: 'Auf die Straße - Ausstellung Dortmund'});
 calendar.method(ICalCalendarMethod.REQUEST);
 
 calendar.createEvent({
-  start: moment.unix(1709830800),
-  end: moment.unix(1711306800),
+  start: moment.unix(1723140000),
+  end: moment.unix(1731866400),
   summary: "Auf die Straße - Ausstellung Dortmund",
   description: "Kalendereintrag für den gesamten Ausstellungszeitraum.",
   url: 'https://www.aufdiestrasse.info/'
