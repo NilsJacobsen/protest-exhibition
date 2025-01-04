@@ -13,8 +13,8 @@ export default function Impressum() {
                 <p className="font-semibold text-2xl text-black uppercase">Verantwortliche</p>
                 <ul role="list pb-8">
                   <li className="pb-4">Anica Jacobsen</li>
-                  <li>Hansastraße 6-10</li>
-                  <li className="pb-4">44137 Dortmund</li>
+                  <li>Lessingstraße 2</li>
+                  <li className="pb-4">73525 Schwäbisch Gmünd</li>
                   {/* <li>Tel.: +49 (0)15730469114</li> */}
                   <li>Mail: hi@aufdiestrasse.info</li>
                 </ul>

@@ -7,8 +7,8 @@ import { Fragment } from "react"
 const Navigation = () => {
     const navigation = [
         { name: "Prolog", href: '#prolog' },
+        { name: "Stationen", href: '#stationen' },
         { name: "Events", href: '#events' },
-        // { name: m.nav_videos(), href: '#videos' },
         { name: "Impressum", href: '/impressum' },
         // { name: m.nav_data_protection(), href: '/datenschutz' },
       ]
@@ -53,10 +53,11 @@ const Navigation = () => {
                 </div>
                 <div className="hidden md:flex md:items-center md:space-x-6">
                   <Link
-                    href="/api/ical"
+                    target="_blank"
+                    href="https://drive.google.com/drive/folders/1fT9RM8KHHvYbxkPQFuilC7murkErHKR4?usp=sharin"
                     className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-black bg-zinc-100 hover:bg-zinc-200"
                   >
-                    Kalendereintrag speichern
+                    Für Kooperationspartner:innen
                   </Link>
                 </div>
               </nav>
@@ -110,10 +111,11 @@ const Navigation = () => {
                     </div>
                     <div className="mt-6 px-5">
                       <Link
-                        href="/api/ical"
-                        className="block text-center w-full py-3 px-4 rounded-md text-black font-medium bg-zinc-100 hover:bg-zinc-200"
+                        target="_blank"
+                        href="https://drive.google.com/drive/folders/1fT9RM8KHHvYbxkPQFuilC7murkErHKR4?usp=sharin"
+                        className="inline-flex items-center px-4 py-2 border border-transparent text-base font-medium rounded-md text-black bg-zinc-100 hover:bg-zinc-200"
                       >
-                        Kalendereintrag speichern
+                        Für Kooperationspartner:innen
                       </Link>
                     </div>
                   </div>

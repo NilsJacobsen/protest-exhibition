@@ -1,9 +1,11 @@
 import Image from 'next/image'
 import Head from 'next/head'
 import Hero from '@/components/landingpage/Hero'
+import CarouselComponent from '@/components/landingpage/Carousel'
 import Navigation from '@/components/Navigation'
 import Prolog from '@/components/landingpage/Prolog'
 import Events from '@/components/landingpage/Events'
+import Stops from '@/components/landingpage/Stops'
 
 export default function Home() {
   return (
@@ -31,7 +33,9 @@ export default function Home() {
         <img alt="pfeile" src="./pfeile.png" className="bottom-16 absolute w-[200px]"/>
       </div>
       <Hero/>
+      <CarouselComponent/>
       <Prolog />
+      <Stops />
       <Events />
       <footer>
         <div className="font-rubik max-w-7xl mx-auto py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
